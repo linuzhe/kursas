@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 8 | Linos darbai</title>
+
+    <style>
+
+        .visai {
+            padding-top: 10px;
+            padding-bottom:10px;
+        }
+
+        #message input,
+        #message textarea {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        ul.checkbox  {
+            margin: 0;
+            padding: 0;
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        ul.checkbox li input {
+            margin-right: .25em;
+        }
+
+        ul.checkbox li {
+            border: 1px transparent solid;
+            float: left;
+            min-width: 120px;
+        }
+
+        #checkbox {
+            overflow: auto;
+        }
+
+        .submit {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <form action="#">
+
+            <fieldset style="width:500px">
+            <legend>Jūsų informacija
+            </legend>
+                <div id="name">
+                    <label for="name">Vardas:</label>
+                    <input type="text" name="name" placeholder="Įrašykite vardą">
+                </div>
+                <div class="visai" id="lastName">
+                    <label for="lastName">Pavardė:</label>
+                    <input type="text" name="lastName" placeholder="Įrašykite pavardę">
+                </div>
+            </fieldset>
+
+            <fieldset style="width:500px">
+            <legend>Klausimai</legend>
+                <div class="visai" id="how">
+                    <label for="how">Kaip sužinojote apie mus?</label>
+                        <select>
+                          <option name="how" value="google">Google</option>
+                          <option name="how" value="tv">TV</option>
+                          <option name="how" value="radijas">Radijas</option>
+                          <option name="how" value="draugai">Draugai</option>
+                        </select>
+                </div>
+                <div class="visai" id="visitAgain">
+                    <label for="visitAgain">Ar apsilankysite vėl?</label><br>
+                           Taip <input type="radio" name="visitAgain" value="yes">
+                           Ne <input type="radio" name="visitAgain" value="no">
+                           Galbūt <input type="radio" name="visitAgain" value="maybe">
+
+                </div>
+                <div class="visai" id="message">
+                    <label for="message">Ką manote apie kursą:</label>
+                    <br>
+                    <input type="textarea" name="message" placeholder ="Rašykite viską, ką galvojate...">
+                </div>
+                <div id="checkbox">
+                <label for="checkbox">Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</label>
+                        <ul class="checkbox">
+                            <li><input type="checkbox" name="c#" value="c#">C#</li>
+                            <li><input type="checkbox" name="html" value="html">HTML</li>
+                            <li><input type="checkbox" name="python" value="python">Python</li>
+                            <li><input type="checkbox" name="css" value="css">CSS</li>
+                            <li><input type="checkbox" name="java" value="java">JAVA</li>
+                            <li><input type="checkbox" name="ruby" value="ruby">Ruby</li>
+                            <li><input type="checkbox" name="php" value="php">PHP</li>
+                            <li><input type="checkbox" name="javascript" value="javascript">JavaScript</li>
+                        </ul>
+                </div>
+                <div class="submit" id="submit">
+                            <input type="submit" name="submit" value="Siųsti">
+                </div>
+             </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>
