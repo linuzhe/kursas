@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS6 | Linos darbai</title>
+    <style>
+        h3, p {
+            color: forestgreen;
+        } 
+        
+        input[type="number"] {
+        width: 80px;
+        }
+        
+    </style>    
+</head>
+
+<body>   
+    
+    <div>
+        <h3>Hello. How old are You?</h3>
+        <div>
+            <form class="checkVisitorAge">
+                <input type="number" min="6" max="110" id="ageOfVisitor" placeholder="Your age" required>
+                <input type="button" onclick="checkAge()" value="Submit">
+            </form>
+        </div>   
+        <div>
+            <p id="answer"></p>
+        </div>
+    </div> 
+    
+    <script>
+        var ageOfVisitor = document.getElementById("ageOfVisitor");
+        var answer = document.getElementById("answer")
+        var yes = "You're Welcome!";
+        var no = "Sorry, You are too young. See Your later. ;)";
+        function checkAge(){
+            if(ageOfVisitor.value >= 21){               
+                answer.innerHTML = yes;
+            }
+            else{               
+                answer.innerHTML = no;          
+            }         
+        };  
+    </script>
+
+</body>
+    
+</html>
