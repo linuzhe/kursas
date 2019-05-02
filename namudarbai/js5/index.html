@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS5 | Linos darbai</title>
+    
+    <style>
+        h3 {
+            color: forestgreen;
+        }
+    </style>
+    
+    <script type="text/javascript">      
+            function dividing() { 
+                    x = document.getElementById("firstNumber").value;
+                    y = document.getElementById("secondNumber").value;
+                    z = x / y;
+                    t = "Result is: "
+                    document.getElementById("demo").innerHTML = "If " + x + " and " + y + ", then result is " + z  + "." //shows the result in webpage         
+                    alert( "If " + x + " and " + y + ", then result is " + z  + "."); // alerts the result      
+                    console.log( "If " + x + " and " + y + ", then result is " + z  + "." ); // shows the result in the console
+            }                  
+                   // del pilnos laimes reiktu padaryti, kad tikrintu, ar nepamirso ivesti, bet tie reguired apacioj nepadeda, o laiko dabar jau truksta //
+        
+    </script>  
+    
+</head>
+    
+<body>
+      <main>          
+     
+        <h2>Dividing</h2>        
+   
+        <p>Select or insert numbers:</p>
+        
+        <form name="dividingForm">
+            
+            <input type=number name=firstNumber id="firstNumber" placeholder="Your first number" required>
+            <br>            
+            <input type=number name=secondNumber id="secondNumber" placeholder="Your second number" required>
+            <br> 
+            <br> 
+            <input type="button" onClick="dividing()" Value="Calculate" />     
+            
+        </form>   
+      
+        <h3 id="demo"></h3>       
+          
+    </main>
+   
+</body>
+    
+</html>
