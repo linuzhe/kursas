@@ -13,6 +13,7 @@
         $country = 'Lietuva'; 
         $city = 'Vilnius'; 
         $population = 574221; 
+        $largest_populatrion = true;
     ?>
     
     <div>  
