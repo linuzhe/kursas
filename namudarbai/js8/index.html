@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="lt">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS8 | Linos darbai</title>
+</head>
+
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>    
+    
+    <script>   
+
+        var list = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+        var names = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+        var thisName = "Jonas";
+        var n = names.slice(1);
+        var removed = names.splice (1);                
+                  
+        document.getElementById("demo0").innerHTML = list.join (" ") + " - pradinis vardų sąrašas";
+        document.getElementById("demo1").innerHTML = thisName + " " + " - tebūnie nespausdinamas";
+        document.getElementById("demo2").innerHTML = n.join (" ") + " (slice Jonas)";
+        document.getElementById("demo3").innerHTML = removed.join (" ") + " (splice Jonas)";             
+    
+    </script>
+    
+</body>
+    
+</html>
