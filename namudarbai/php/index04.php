@@ -19,7 +19,7 @@
              'Maskva' => 11.5           
          ];   
          
-        $cities2[] = 'Londonas => 8.6';
+        $cities2['Londonas'] = 8.6;
     ?>
 
     <div>    
