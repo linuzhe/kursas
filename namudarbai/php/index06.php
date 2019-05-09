@@ -28,7 +28,7 @@
             } elseif ($metai == 1774) {
                 echo "JAV sostinė vis dar Filadelfijoje.";
             } else {
-                echo "Liko " . $skirtumas . " metai(-ų) iki Vašingtono įkūrimo";
+                echo 'Liko ' . $skirtumas . ' metai(-ų) iki Vašingtono įkūrimo.';
             }
         ?>
            

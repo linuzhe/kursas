@@ -15,7 +15,7 @@
         function plotas($a,$b) {
             return $a*$b; 
         }
-        if(isset($_POST["submit"])){
+        if(isset($_POST['submit'])){
             if($_POST['a'] && $_POST['b']){
                 $atsakymas = plotas($_POST['a'], $_POST['b']);
                 echo "Plotas yra $atsakymas";
@@ -25,9 +25,9 @@
         }else{ 
     ?>                  
         <form action = "<?php $_SERVER['PHP_SELF']; ?>" method="POST">
-            Ilgis: <input type='number' name='a' style = "width: 100px;"/> 
+            Ilgis: <input type="number" name="a" style = "width: 100px;"/> 
             <br>
-            Plotis: <input type='number' name='b' style = "width: 100px;"/>
+            Plotis: <input type="number" name="b" style = "width: 100px;"/>
             <br>
             <br>
             <input type="submit" name="submit" value="Skaičiuoti">
