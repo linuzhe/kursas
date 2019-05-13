@@ -1,0 +1,43 @@
+h1 {
+    font-size: 44px;
+    color: crimson;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
+h2 {
+    font-size: 44px;
+    color: crimson;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;    
+}
+
+header .menu .menuItem {
+    display:flex;
+    float:right;
+    background-color: crimson;
+    font-family: 'Roboto', sans-serif;    
+    margin:0px;
+    padding:10px 10px; 
+}
+
+
+a:link { 
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: underline;
+}
