@@ -1,0 +1,130 @@
+h1 {
+    font-size: 44px;
+    color: midnightblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
+h2 {
+    font-size: 44px;
+    color: midnightblue;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;    
+}
+
+ul {
+  font-family: 'Roboto', sans-serif; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: midnightblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+
+li a:hover {
+  background-color: midnightblue;
+}
+
+
+/*
+header .menu .menuItem  {
+    display:flex;
+    float:right;
+    background-color: midnightblue;
+    font-family: 'Roboto', sans-serif;    
+    margin: 0 auto;
+    padding:10px 10px; 
+}
+*/
+
+
+a:link { 
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+    text-decoration: none;    
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: white;
+    text-decoration: underline;
+}
+
+a:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* SIGNUP PAGE */
+
+.main-wrapper-signup {
+    margin: 0 auto;
+    width: 1000px;
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.signup-form {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 5px;
+    flex-direction: left;
+    border:1px;
+}
+
+.signup-form input {
+    width:90%;
+    height:40px;
+    padding: 0 5%;
+    margin-bottom: 4px;
+    border:0;
+    background-color:#fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: midnightblue;
+    line-height: 40px;    
+}
+
+.signup-form button {
+    display:block;
+    width:30%;
+    height:40px;
+    border:none;
+    background-color: midnightblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    cursor:pointer;    
+}
+    
+    
