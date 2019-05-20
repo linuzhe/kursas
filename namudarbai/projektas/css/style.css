@@ -1,16 +1,43 @@
+body, html {
+  height: 100%;
+}
+
+
 h1 {
     font-size: 44px;
-    color: midnightblue;
+    color: #4286f4;
     font-family: 'Roboto', sans-serif;
     text-align: center;    
 }
 
 h2 {
     font-size: 44px;
-    color: midnightblue;
+    color: #4286f4;
     font-family: 'Roboto', sans-serif;
     text-align: left;    
 }
+
+p {
+    font-size: 20px;
+    color: #4286f4;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;    
+}
+
+.header p {
+    font-size: 44px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
+.footer p {
+    font-size: 16px;
+    color: #4286f4;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
 
 ul {
   font-family: 'Roboto', sans-serif; 
@@ -18,7 +45,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: midnightblue;
+  background-color: #efe6ce;
 }
 
 li {
@@ -27,7 +54,7 @@ li {
 
 li a {
   display: inline-block;
-  color: white;
+  color: #3E69B0;
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
@@ -35,7 +62,7 @@ li a {
 }
 
 li a:hover {
-  background-color: midnightblue;
+  background-color: #efe6ce;
 }
 
 
@@ -53,22 +80,23 @@ header .menu .menuItem  {
 
 a:link { 
     font-family: 'Roboto', sans-serif; 
-    color: white;
-    text-decoration: none;    
+    color: #4286f4;
+    text-decoration: none;  
+    font-size: 22px;
 }
 
 a:visited {
-    color: white;
+    color: #3E69B0;
     text-decoration: none;
 }
 
 a:hover { 
-    color: white;
+    color: #172E5B;
     text-decoration: underline;
 }
 
 a:active {
-    color: white;
+    color: #172E5B;
     text-decoration: underline;
 }
 
@@ -77,8 +105,8 @@ a:active {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: midnightblue;
-  color: white;
+  background-color: #efe6ce;
+  color: #3E69B0;
   text-align: center;
 }
 
@@ -102,16 +130,28 @@ a:active {
     border:1px;
 }
 
+.map {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+    flex-direction: left;
+    border:1px;
+    flex-direction: column;
+    justify-content: left;
+    padding-bottom: 20px;
+}
+
+
 .signup-form input {
     width:90%;
     height:40px;
     padding: 0 5%;
     margin-bottom: 4px;
     border:0;
-    background-color:#fff;
+    background-color:#efe6ce;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: midnightblue;
+    color: #3E69B0;
     line-height: 40px;    
 }
 
@@ -120,11 +160,115 @@ a:active {
     width:30%;
     height:40px;
     border:none;
-    background-color: midnightblue;
+    background-color: #3E69B0;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: #fff;
     cursor:pointer;    
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #efe6ce;
+  align-items: stretch;
+  position: relative;
+}
+
+.flex-container > div {
+  background-color: white;
+  padding: 20px;
+  margin: 5px;
+  flex-wrap: wrap;    
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.productDetails {
+  margin: 2x;
+  padding: 2px;
+  align-items: center;   
+  height: 100px;
+}
+
+.title {
+  margin: 2x;
+  padding: 2px; 
+}
+
+
+
+.buttonKainos a {
+    background-color: #172E5B;
+    font-family: 'Roboto', sans-serif; 
+    color: #172E5B;
+    text-decoration: none;  
+    font-size: 22px;
+}
+
+.buttonKainos a:hover {
+   background-color: #172E5B;
+    font-family: 'Roboto', sans-serif; 
+    color: #172E5B;
+    text-decoration: none;  
+    font-size: 22px;
+}
+
+.buttonKainos  a:link { 
+    font-family: 'Roboto', sans-serif; 
+    color: #172E5B;
+    text-decoration: none;  
+    font-size: 22px;
+}
+
+.buttonKainos a:visited {
+    color: #172E5B;
+    text-decoration: none;
+}
+
+.buttonKainos  a:hover { 
+    color: #172E5B;
+    text-decoration: none;
+}
+
+.buttonKainos a:active {
+    color: #172E5B;
+    text-decoration: none;
+}
+        
+.buttonKainos {
+  background-color: #4286f4;
+  border: none;
+  color: #172E5B;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  border-radius: 3px;
+}
+
+span.price {
+    color: #4286f4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+}
+
+span.line-through {  
+    text-decoration: line-through;
+}
+
+span.small {
+    color: #172E5B;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;  
+    line-height: 1.0;
 }
     
     

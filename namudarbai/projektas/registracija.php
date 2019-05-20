@@ -5,10 +5,10 @@
     <div class="main-wrapper-signup">
     </div>
 </section>
-
+<h2>Registracija</h2>
 <section class="main-container">
     <div class="main-wrapper-signup">
-        <h2>Registracija</h2>
+        
         <form class="signup-form" action="includes/signup.inc.php" method="post">
             <input type="text" name="first" placeholder="Vardas" />
             <input type="text" name="last" placeholder="Pavardė" />

@@ -10,9 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">    
+   
 </head>
 
-    <body>
+    <body>            
+
+        
       <header class="header" id="header">   
         <div class= "top">           
         
@@ -23,8 +26,8 @@
                      <li><a href="programa.php">Programa</a></li>
                      <li><a href="komanda.php">Komanda</a></li>
                      <li><a href="kaina.php">Kaina</a></li>
-                     
-                     <li><a href="registracija.php">Registracija</a></li>                                      
+                     <li><a href="registracija.php">Registracija</a></li>
+                     <li><a href="kontaktai.php">Kontaktai</a></li>   
                      <li><a href="signup.php"><?php
                             if(isset($_SESSION['u_id'])) {
                                 echo '<form action="includes/logout.inc.php" method="post">
@@ -36,10 +39,12 @@
                                 <button type="submit" name="submit">Prisijungti</button>
                                 </form>';
                             }
-                        ?></a></li>
-                     <li><a href="kontaktai.php">Kontaktai</a></li>                     
+                        ?></a></li>                                      
                    
                  </ul>
-            </div>        
+            </div>            
+                    
+ 
+            
           </div>
         </header>
